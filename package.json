@@ -1,0 +1,18 @@
+{
+  "name": "json-to-ruby",
+  "main": "./lib/json-to-ruby",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "json-to-ruby:toggle"
+  },
+  "repository": "https://github.com/atom/json-to-ruby",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

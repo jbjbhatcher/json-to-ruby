@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle json-to-ruby",
+        "command": "json-to-ruby:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "json-to-ruby",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "json-to-ruby:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
