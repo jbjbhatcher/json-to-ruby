@@ -96,5 +96,10 @@ describe('JsonToRuby', () => {
         \"snakeCasedSecondHump\": \"value2\"}");
     });
 
+    it('creates separate classes with a nested JSON tree structure'), () => {
+      let expected =
+      let actual = 
+    });
+
   });
 });

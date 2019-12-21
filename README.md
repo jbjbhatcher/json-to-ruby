@@ -1,5 +1,5 @@
 # JSON - Ruby Atom Plugin
-Converts a JSON String to a boilerplate ruby class!
+Converts a JSON String to a boilerplate ruby class definition!
 
 # Instructions
 1. Highlight a valid JSON object
