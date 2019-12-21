@@ -69,5 +69,32 @@ describe('JsonToRuby', () => {
         expect(jsonToRubyElement).not.toBeVisible();
       });
     });
+
+    // TODO: make these integration tests run : )
+    it('converts a 1 dimensional JSON string to a ruby class', () => {
+      let expected = "".concat("class SomeClass", "\n\t", "attr_accessor :phrase",
+        "\n", "end");
+      let actual = createRubyClassFromValidJSON("{\"key\": \"value\"}");
+    });
+
+    it('converts a 2 dimensional JSON string to a ruby class', () => {
+      let expected = "".concat("class SomeClass", "\n\t", "attr_accessor :key1",
+        "\n\t", "attr_accessor :key2", "\n", "end");
+      let actual = createRubyClassFromValidJSON("{\"key1\": \"value1\", \"key2\": \"value2\"}";)
+    });
+
+    it('replaces camelcased variables with snake case'), () => {
+      let expected = "".concat("class SomeClass", "\n\t", "attr_accessor :snake_cased",
+        "\n", "end");
+      let actual = createRubyClassFromValidJSON("{\"snakeCased\": \"value\"}");
+    });
+
+    it('replaces camelcased variables with 2 humps to snake case'), () => {
+      let expected = "".concat("class SomeClass", "\n\t", "attr_accessor :snake_cased_second_hump",
+        "\n", "end");
+      let actual = createRubyClassFromValidJSON("{\"snakeCasedFirstHump\": \"value1\",
+        \"snakeCasedSecondHump\": \"value2\"}");
+    });
+
   });
 });
