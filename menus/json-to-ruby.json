@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle json-to-ruby",
-        "command": "json-to-ruby:toggle"
+        "label": "Convert JSON String to Ruby class",
+        "command": "json-to-ruby:convert"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "json-to-ruby",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "json-to-ruby:toggle"
+              "label": "Convert",
+              "command": "json-to-ruby:convert"
             }
           ]
         }

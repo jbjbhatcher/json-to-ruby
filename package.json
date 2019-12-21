@@ -6,7 +6,7 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "json-to-ruby:toggle"
+    "atom-workspace": "json-to-ruby:convert"
   },
   "repository": "https://github.com/atom/json-to-ruby",
   "license": "MIT",

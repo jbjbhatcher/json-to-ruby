@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "json-to-ruby:toggle"
+    "ctrl-alt-o": "json-to-ruby:convert"
   }
 }
